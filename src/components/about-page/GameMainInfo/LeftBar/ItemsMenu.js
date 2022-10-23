@@ -22,12 +22,12 @@ const ItemsMenu = () => {
   };
   console.log('accItems', accItems)
   return (
-    <ul className="lp-menu">
-      <li className="lp-menu__item d-flex f-ji-sb">
+    <ul className="lb-menu">
+      <li className="lb-menu__item d-flex f-ji-sb">
         <span className="d-block">Buy Now</span>
         <Checkbox onChange={checkboxHandler} checked={checkbox} />
       </li>
-      <li className="lp-menu__item d-flex f-ji-sb">
+      <li className="lb-menu__item d-flex f-ji-sb">
         <span className="d-block">Price Range</span>
         <MinMaxInput
           minName="min"
@@ -37,7 +37,7 @@ const ItemsMenu = () => {
           onChange={priceRangeHandler}
         />
       </li>
-      <li className="lp-menu__item lp-menu__item--with-acc">
+      <li className="lb-menu__item lb-menu__item--with-acc">
         <div className="acc-btn f-ji-sb" onClick={accordionHandler} data-key="attr1" >
           <span className="d=block">Attributes</span>
           <img src={arrowIcon} className={`acc-arrow ${accItems["attr1"] ? 'open' : '' }`} />
@@ -46,7 +46,7 @@ const ItemsMenu = () => {
           lorem ipsum
         </div>
       </li>
-      <li className="lp-menu__item lp-menu__item--with-acc">
+      <li className="lb-menu__item lb-menu__item--with-acc">
         <div className="acc-btn f-ji-sb" onClick={accordionHandler} data-key="attr2" >
           <span className="d=block">Attributes</span>
           <img src={arrowIcon} className={`acc-arrow ${accItems["attr2"] ? 'open' : '' }`} />

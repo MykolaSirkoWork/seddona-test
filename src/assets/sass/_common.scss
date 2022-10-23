@@ -97,10 +97,12 @@
   outline: none;
   transition: 0.4s;
   border-bottom: 1px solid #E8E8E8;
-  font-weight: 600;
-  font-size: 14rem;
-  line-height: 17px;
   height: 40px;
+  & > span {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 17px;
+  }
 }
 .acc-panel {
   padding: 4px 6px;
@@ -115,5 +117,83 @@
   margin-right: 10px;
   &.open {
     transform: rotate(180deg);
+  }
+}
+// tabs has different font styles
+.about {
+  & .acc-btn {
+    & > span {
+      color: #575757;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 15px;
+    } 
+  }
+}
+.items {
+  & .acc-btn {
+    & > span {
+      color: #000;
+      text-transform: capitalize;
+
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 17px;
+    } 
+  }
+}
+
+
+// SEARCH INPUT
+.search-field {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  height: 30px;
+  background-color: #F3F3F3;
+  padding: 4px 10px;
+  border-radius: 3px;
+  input {
+    background-color: #F3F3F3;  
+    border: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 15px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #8C8C8C;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 15px;
+    }
+  }
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// SELECT
+.sort-select {
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 12px;
+  
+  select {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    & > * {
+      font-size: 1.2rem;
+    }
+  }
+  .select-empty {
+    width: 20px;
   }
 }

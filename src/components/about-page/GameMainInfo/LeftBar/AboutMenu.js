@@ -13,8 +13,8 @@ const AboutMenu = () => {
   };
   return (
     <>
-      <ul className="lp-menu">
-        <li className="lp-menu__item lp-menu__item--with-acc">
+      <ul className="lb-menu">
+        <li className="lb-menu__item lb-menu__item--with-acc">
           <div className="acc-btn f-ji-sb" onClick={accordionHandler} data-key="attr1" >
             <span className="d=block">game details</span>
             <img src={arrowIcon} className={`acc-arrow ${accItems["attr1"] ? 'open' : '' }`} />
@@ -23,7 +23,7 @@ const AboutMenu = () => {
             lorem ipsum
           </div>
         </li>
-        <li className="lp-menu__item lp-menu__item--with-acc">
+        <li className="lb-menu__item lb-menu__item--with-acc">
           <div className="acc-btn f-ji-sb" onClick={accordionHandler} data-key="attr2" >
             <span className="d=block">system requirements</span>
             <img src={arrowIcon} className={`acc-arrow ${accItems["attr2"] ? 'open' : '' }`} />

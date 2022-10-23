@@ -1,17 +1,23 @@
 .banner {
+  position: relative;
   display: flex;
   align-items: flex-end;
   width: 100%;
   min-height: 322px;
+  min-width: 1280px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -100;
 }
 
 .game-header {
+  position: relative;
   display: flex;
   align-items: center;
   transform: translateY(60px);
+  z-index: 0;
+  
   &__preview-img {
     background-color: #fff;
     width: 174px;

@@ -1,0 +1,125 @@
+.tabs {
+  z-index: 10;
+  &__nav {
+    display: flex;
+    & li {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 15px;
+      & > button {
+        background-color: #fff;
+        color: #8C8C8C;
+        border: none;
+        padding: 10px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 150px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 15px;
+      }
+      &.active {
+        border-bottom: 3px solid var(--orange);
+      }
+    }
+  }
+  &__panel {
+    border-top: 1px solid #E8E8E8
+  }
+}
+
+
+.about-tab {
+  width: 100%;
+  margin-bottom: 20px;
+  .data-panel {
+    width: 100%;
+    height: 372px;
+    margin: 32px 0;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .thumbnails-panel {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 160px;
+      height: 82px;
+      &--active {
+        border: 3px solid var(--orange);
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+}
+
+.items-tab {
+  padding: 27px 0;
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__items-list {
+    height: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+    .item-card {
+      width: 232px;
+      height: auto;
+      border-radius: 3px;
+      box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.06);
+      background-color: #fff;
+      &__img-container {
+        width: 232px;
+        height: 232px;
+        background-color: var(--orange);
+        border-bottom: 3px solid var(--orange-light);
+        border-radius: 3px 3px 0 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__body {
+        padding: 16px 12px;
+      }
+      &__game-name {
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 8px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      &__item-name {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 12px;
+        color: #000;
+      }
+      &__item-ratting {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 10px;
+        color: #000;
+      }
+    }
+  }
+}
