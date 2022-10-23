@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  padding: 0 85px;
+}
+.d-block {
+  display: block;
+}
+// FLEX
+.d-flex {
+  display: flex;
+}
+// flex-direction
+.f-fd-row {
+  flex-direction: row
+}
+.f-fd-col {
+  flex-direction: column
+}
+// justify-content
+.f-ji-sb {
+  justify-content: space-between
+}
+// align-items
+.f-ai-c {
+  align-items: center;
+}
