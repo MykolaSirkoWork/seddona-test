@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import './_basic';
 @import './_variables';
-@import './_layout';
 @import './_common';
+@import './_layout';
 @import './_header';
 @import './_footer';
 @import './_description-section';
 @import './_features-section';
 @import './_games-list';
 @import './game-main-info';
+
+@import './pages/single-item-page';
