@@ -1,4 +1,4 @@
-import searchIcon from '../../assets/images/search-icon-small.svg';
+import searchIcon from '../../assets/images/icons/search-icon-small.svg';
 
 const SearchField = ({
   inputHandler,

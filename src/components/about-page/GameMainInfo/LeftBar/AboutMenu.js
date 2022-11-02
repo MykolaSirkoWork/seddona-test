@@ -1,5 +1,5 @@
 import { useState } from "react";
-import arrowIcon from '../../../../assets/images/arrow.svg'
+import arrowIcon from '../../../../assets/images/icons/arrow.svg'
 
 const AboutMenu = () => {
   const [accItems, setAccItems] = useState({

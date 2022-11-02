@@ -2,9 +2,9 @@ import GameStats from "./GameStats";
 import ItemsMenu from "./ItemsMenu";
 import AboutMenu from './AboutMenu';
 import DownloadBtn from "../../../common/DownloadBtn";
-import twitterIcon from '../../../../assets/images/twitter-icon.svg'
-import discordIcon from '../../../../assets/images/discord-icon.svg'
-import webIcon from '../../../../assets/images/website-icon.svg'
+import twitterIcon from '../../../../assets/images/icons/twitter-icon.svg'
+import discordIcon from '../../../../assets/images/icons/discord-icon.svg'
+import webIcon from '../../../../assets/images/icons/website-icon.svg'
 
 const LeftBar = ({ currTab }) => {
   const leftBar = currTab === 'items' ? 'items' : 'about';

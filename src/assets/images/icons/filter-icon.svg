@@ -1,0 +1,6 @@
+<svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="2.5" x2="13" y2="2.5" stroke="#7D7D7D"/>
+<line y1="7.5" x2="13" y2="7.5" stroke="#7D7D7D"/>
+<circle cx="4.5" cy="2.5" r="1.5" fill="white" stroke="#7D7D7D"/>
+<circle cx="8.5" cy="7.5" r="1.5" fill="white" stroke="#7D7D7D"/>
+</svg>

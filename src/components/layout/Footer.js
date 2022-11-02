@@ -1,5 +1,5 @@
-import twitterIcon from '../../assets/images/twitter-icon.svg';
-import discordIcon from '../../assets/images/discord-icon.svg';
+import twitterIcon from '../../assets/images/icons/twitter-icon.svg';
+import discordIcon from '../../assets/images/icons/discord-icon.svg';
 import footerLogo from '../../assets/images/footer-logo.png';
 
 const Footer = () => {

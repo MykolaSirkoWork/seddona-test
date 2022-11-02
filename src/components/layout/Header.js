@@ -1,7 +1,7 @@
 
-import searctIcon from '../../assets/images/search-icon.svg';
-import wallerIcon from '../../assets/images/wallet-icon.svg';
-import profileIcon from '../../assets/images/profile-icon.svg';
+import searctIcon from '../../assets/images/icons/search-icon.svg';
+import wallerIcon from '../../assets/images/icons/wallet-icon.svg';
+import profileIcon from '../../assets/images/icons/profile-icon.svg';
 import mainLogo from '../../assets/images/main-logo.png';
 
 const links = [

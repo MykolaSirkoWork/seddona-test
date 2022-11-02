@@ -1,7 +1,7 @@
 import Checkbox from '../../../common/Checkbox';
 import { useState } from "react";
 import MinMaxInput from '../../../common/MinMaxInput';
-import arrowIcon from '../../../../assets/images/arrow.svg';
+import arrowIcon from '../../../../assets/images/icons/arrow.svg';
 
 const ItemsMenu = () => {
   const [checkbox, setCheckbox] = useState(false);

@@ -1,4 +1,4 @@
-import eth from '../../assets/images/eth.svg';
+import eth from '../../assets/images/icons/eth.svg';
 
 const MinMaxInput = ({
   minName,
