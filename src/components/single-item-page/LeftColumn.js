@@ -2,9 +2,9 @@ import SingleAccordion from "../common/SingleAccordion";
 import descIcon from '../../assets/images/icons/info-icon.svg';
 import verifiedIcon from '../../assets/images/icons/verified-icon.svg';
 import labelIcon from '../../assets/images/icons/label-icon.svg';
-import ItemPage from "../../pages/ItemPage";
 import Prop from './Prop';
 import itemBigImage from '../../assets/images/item-big.png';
+
 const properties = [
   {
     name: 'map',
@@ -25,7 +25,7 @@ const properties = [
 
 const LeftColumn = () => {
   return (
-    <div>
+    <div className="pt-50">
       <div className="img-container mb-18">
         <img src={itemBigImage} alt="item img" />
       </div>

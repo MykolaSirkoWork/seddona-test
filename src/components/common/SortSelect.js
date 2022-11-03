@@ -4,7 +4,6 @@ const SortSelect = ({
   onChange,
   currValue
 }) => {
-  console.log(Boolean(currValue))
   return (
     <label className="sort-select">
       Order by

@@ -1,9 +1,17 @@
 .item-page {
+  min-height: calc(100vh - 274px); // 274 - footer height - 162, header height - 112;
   &__content {
+    border-top: 1px solid #f3f3f3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
   }
+}
+
+.sell-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .img-container {
@@ -14,11 +22,11 @@
 .description-acc {
   padding-top: 14px;
   & h4 {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--grey-light);
     & span {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 400;
       color: var(--orange-dark);
     }
@@ -29,7 +37,7 @@
 
   & p {
     margin-top: 12px;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--grey);
   }
@@ -49,25 +57,164 @@
     }
     & span {
       display: block;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: 600;
-      line-height: 14px;
+      line-height: 1.4rem;
       color: var(--grey);
     }
     & p {
-      font-size: 10px;
+      font-size: 1rem;
       font-weight: 500;
-      line-height: 12px;
+      line-height: 1.2rem;
       color: var(--grey);
     }
     & h4 {
       font-weight: 700;
-      font-size: 10px;
-      line-height: 12px;
+      font-size: 1rem;
+      line-height: 1.2rem;
       text-transform: uppercase;
       color: var(--orange-dark);
     }
   }
 }
 
+.item-info {
+  margin-bottom: 26px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    width: 100%;
+    & span {
+      white-space: nowrap;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1.6rem;
+      color: var(--orange-dark)
+    }
+    & .buttons {
+      display: flex;
+      align-items: center;
+      & button {
+        background-color: transparent;
+        border: none;
+        &:focus ,&:active {
+          outline: none;
+        }
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--grey);
+    margin-bottom: 34px;
+  }
+  &__additional-info {
+    display: flex;
+    & .owned-by {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+      color: var(--grey);
+      margin-right: 30px;
+      & > span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        color: var(--orange-dark);
+      }
+    }
+    & .dynamic-data {
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 6px;
+      }
+      & span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+        color: var(--grey);
+      }
+    }
+  }
+}
 
+
+.sale-acc {
+  display: flex;
+  width: 100%;
+  padding: 20px 0 14px;
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: var(--grey);
+    margin-bottom: 15px;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    & img {
+      width: 21px;
+      height: 26px;
+      margin-right: 12px;
+    }
+    & p {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      color: var(--grey);
+    }
+  }
+  &__buttons {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    & button {
+      margin: 0 5px;
+    }
+  }
+}
+
+.price-history-acc {
+  display: flex;
+  padding: 17px 0 0;
+  .data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    & .no-data {
+      text-align: center;
+      & svg {
+        margin-bottom: 6px;
+        & path {
+          stroke: var(--grey);
+        }
+      }
+      & h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        color: var(--grey);
+        margin-bottom: 6px;
+      }
+      & p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+        color: var(--grey);
+      }
+      
+    }
+  }
+}
