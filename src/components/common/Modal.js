@@ -8,7 +8,6 @@ const Modal = ({
   title,
   children
 }) => {
-
   return ReactDOM.createPortal(
     <div className={`modal ${extraClasses ?? ''}`} onClick={onClose}>
       <div className="modal__content">

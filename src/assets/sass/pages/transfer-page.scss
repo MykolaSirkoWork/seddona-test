@@ -1,10 +1,68 @@
 .transfer-page {
+  @include pageHeight;
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--grey);
+    margin-bottom: 34px;
+  }
   &__content {
-
-
+    border-top: 1px solid var(--grey-border-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0;
+    & .img-container {
+      padding: 18px;
+      width: 256px;
+      height: 256px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      margin-bottom: 34px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    & label {
+      width: 350px;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2rem;
+      color: #2A2B2A;
+      margin-bottom: 4px;
+    }
+    & p {
+      width: 400px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.7rem;
+      color: var(--grey);
+    }
   }
 }
 
 .transfer-modal {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 10px;
+  & h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: var(--grey);
+    margin-bottom: 10px;
+  }
+  & p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--grey);
+  }
 }

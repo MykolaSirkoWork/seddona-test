@@ -243,6 +243,23 @@
   }
 }
 
+// TEXTFIELD
+.text-field {
+  background-color: #fff;
+  width: 350px;
+  color: #2A2B2A;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  border: 1px solid var(--grey-border-light);
+  border-radius: 3px;
+  &:focus, &:active, &:focus-visible {
+    border: 1px solid var(--orange-light);
+    outline: none;
+  }
+}
+
 // BUTTON
 .btn {
   border-radius: 3px;
@@ -266,6 +283,11 @@
 // MODAL
 .modal {
   position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   overflow: none;
@@ -275,7 +297,6 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 22px 28px;
-    transform: translate(50%);
   }
   &__header {
     display: flex;
@@ -285,7 +306,6 @@
     border-bottom: 1px solid var(--grey-border-light);
     & h3 {
       width: 100%;
-      text-align: center;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.7rem;

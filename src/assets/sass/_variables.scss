@@ -12,3 +12,8 @@
   --bg-secondary: #F8F8F8;
   --bg-footer: #2A2B2A;
 }
+
+
+@mixin pageHeight {
+  min-height: calc(100vh - 274px);// 274 - footer height - 162, header height - 112;
+}
