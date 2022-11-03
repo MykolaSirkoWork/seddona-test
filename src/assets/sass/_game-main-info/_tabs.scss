@@ -1,32 +1,32 @@
-.tabs {
-  z-index: 10;
-  &__nav {
-    display: flex;
-    & li {
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 15px;
-      & > button {
-        background-color: #fff;
-        color: #8C8C8C;
-        border: none;
-        padding: 10px 0;
-        text-transform: uppercase;
-        cursor: pointer;
-        width: 150px;
-        font-weight: 400;
-        font-size: 1.2rem;
-        line-height: 15px;
-      }
-      &.active {
-        border-bottom: 3px solid var(--orange);
-      }
-    }
-  }
-  &__panel {
-    border-top: 1px solid #E8E8E8
-  }
-}
+// .tabs {
+//   z-index: 10;
+//   &__nav {
+//     display: flex;
+//     & li {
+//       font-weight: 400;
+//       font-size: 1.2rem;
+//       line-height: 15px;
+//       & > button {
+//         background-color: #fff;
+//         color: #8C8C8C;
+//         border: none;
+//         padding: 10px 0;
+//         text-transform: uppercase;
+//         cursor: pointer;
+//         width: 150px;
+//         font-weight: 400;
+//         font-size: 1.2rem;
+//         line-height: 15px;
+//       }
+//       &.active {
+//         border-bottom: 3px solid var(--orange);
+//       }
+//     }
+//   }
+//   &__panel {
+//     border-top: 1px solid #E8E8E8
+//   }
+// }
 
 
 .about-tab {
@@ -71,7 +71,6 @@
     align-items: center;
     margin-bottom: 10px;
   }
-
   &__items-list {
     height: 100%;
     max-height: 500px;
@@ -122,4 +121,10 @@
       }
     }
   }
+}
+
+.btn--items-tab {
+  width: auto;
+  padding: 13px 16px;
+  text-transform: none;   
 }

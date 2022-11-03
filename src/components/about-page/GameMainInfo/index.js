@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from "./Banner"
 import LeftBar from './LeftBar';
 import RightBar from './RightBar';
+import bannerImg from '../../../assets/images/banner.png';
 
 
 const GameMainInfo = () => {
@@ -10,10 +11,10 @@ const GameMainInfo = () => {
   
   return (
     <div className="info">
-      <Banner gameName="Yati bomber" createdBy="SuperYeti" />
+      <Banner bgImage={bannerImg} />
       <div className='info__main container'>
         <LeftBar currTab={currTab} />
-        <RightBar currTab={currTab} tabHandler={tabHandler} />
+        <RightBar currTab={currTab} tabHandler={tabHandler}/>
       </div>
     </div>
   )

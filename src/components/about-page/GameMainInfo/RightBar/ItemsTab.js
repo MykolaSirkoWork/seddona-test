@@ -3,11 +3,20 @@ import SearchField from "../../../common/SearchField";
 import SortSelect from "../../../common/SortSelect";
 import ItemCard from "./ItemCard";
 import { items } from "../../../../data";
+import Dropdown from "../../../common/Dropdown";
+import Button from "../../../common/Button";
+
 
 const selectData = [
   { title: 'Key 1', value: 'key1' },
   { title: 'Key 2', value: 'key2' },
   { title: 'Key 3', value: 'key3' },
+]
+
+const sortData = [
+  { value: 90, title: 'Last 90 days' },
+  { value: 60, title: 'Last 60 days' },
+  { value: 30, title: 'Last 30 days' },
 ]
 const ItemsTab = () => {
   const [search, setSearch] = useState('');
@@ -25,12 +34,15 @@ const ItemsTab = () => {
           inputHandler={searchHandler}
           submitHandler={submitHandler}
           placeholder="Search Items, Attributes"
+          extraClasses="mr-10"
         />
-        <SortSelect
-          selectData={selectData}
-          onChange={sortByHandler}
-          currValue={sortBy}
+        <Dropdown 
+          data={sortData}
+          onChange={() => {}}
+          currValue={sortData[0].title}
+          extraClasses="mr-10"
         />
+        <Button extraClasses="btn--orange btn--items-tab" text="Make collection offer" />
       </div>
       <div className="items-tab__items-list">
         {items.map((item) => (

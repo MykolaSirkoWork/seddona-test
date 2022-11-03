@@ -5,20 +5,26 @@ import DownloadBtn from "../../../common/DownloadBtn";
 import twitterIcon from '../../../../assets/images/icons/twitter-icon.svg'
 import discordIcon from '../../../../assets/images/icons/discord-icon.svg'
 import webIcon from '../../../../assets/images/icons/website-icon.svg'
-
+import GamePreview from "../../../common/GamePreview";
+import { ReactComponent as FilterIcon } from '../../../../assets/images/icons/filter-icon.svg'
 const LeftBar = ({ currTab }) => {
   const leftBar = currTab === 'items' ? 'items' : 'about';
   return (
     <div className={`left-bar ${leftBar}`}>
+      <GamePreview gameName="Yeti Bomber" createdBy="SuperYeti" extraClasses="mb-38" />
       {currTab === 'items' && (
         <>
           <GameStats />
-          <div className="filter-text">{'|< Filters'}</div>
+          <div className="filter-text">
+            <FilterIcon className="mr-6"/>
+            Filters
+          </div>
           <ItemsMenu />
         </>
       )}
       {currTab == 'about' && (
         <>
+          
           <h3 className="game__slogan">Let’s all blow up the yetiverse.</h3>
           <p className="game__short-desc">Yeti Bomber is an exciting MMO web3 game where players can compete, earn, and own land quarries that provide the resources to level up their game play.</p>
           <DownloadBtn />

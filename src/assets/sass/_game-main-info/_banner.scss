@@ -9,6 +9,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -100;
+  background-color: #f3f3f3;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/icons/drop-content-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+  }
 }
 
 .game-header {

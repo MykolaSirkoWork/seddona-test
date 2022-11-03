@@ -4,10 +4,11 @@ const SearchField = ({
   inputHandler,
   value,
   placeholder,
-  submitHandler
+  submitHandler,
+  extraClasses
 }) => {
   return (
-    <div className="search-field">
+    <div className={`search-field ${extraClasses ?? ''}`}>
       <input
         type="text"
         className="search-input"
