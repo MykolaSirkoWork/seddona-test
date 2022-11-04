@@ -1,7 +1,7 @@
 const ActivityTab = () => {
   return (
     <div className="activity-tab">
-      ActivityTab
+      asdasd
     </div>
   )
 }

@@ -20,7 +20,6 @@ const ItemsMenu = () => {
     const key = e.target.dataset.key;
     setAccItems(prev => ({ ...prev, [key]: !prev[key]}))
   };
-  console.log('accItems', accItems)
   return (
     <ul className="lb-menu">
       <li className="lb-menu__item d-flex f-ji-sb">
