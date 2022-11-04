@@ -1,0 +1,158 @@
+.wallet {
+  @include pageHeight();
+  &__content {
+    padding: 60px 0;
+    border-top: 1px solid #f3f3f3;
+  }
+  &__dashboard {
+    width: 730px;
+    padding: 20px 95px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
+.wallet-activity {
+  &__header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--grey-border-light);
+    & h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.7rem;
+      color: var(--grey);
+      &::after {
+        content: url('../../images/icons/arrow.svg');
+        margin-left: 6px;
+      }
+    }
+  }
+  &__body {
+
+    & .main-info {
+      margin: 40px auto 0;
+      width: 140px;
+      margin-bottom: 46px;
+      &__values {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        & svg {
+          width: 20px;
+          height: 26px;
+          margin-right: 8px;
+        }
+      }
+      &__points {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        color: (--grey);
+        margin-right: 12px;
+      }
+      &__dolars {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+        color: var(--grey);
+      }
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__btn {
+        & svg {
+          margin-bottom: 6px;
+        }
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+        color: var(--orange-dark)
+      }
+    }
+    & .interactions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        position: relative;
+        width: 160px;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.4rem;
+        color: var(--orange-dark);
+        padding: 14px 0;
+        //border-bottom: 1px solid var(--grey-border-light);
+        &::after {
+          content: '';
+          width: 160px;
+          left: 0;
+          bottom: -1px;
+          position: absolute;
+          border-bottom: 1px solid var(--orange-dark);
+        }
+      }
+      &__content {
+        width: 100%;
+      }
+      & .int-item {
+        padding: 20px 0;
+        
+        border-top: 1px solid var(--grey-border-light);
+        &__info {
+          display: flex;
+          justify-content: space-between;
+        }
+        &__name {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.7rem;
+          color: var(--grey);
+        }
+        &__date {
+          font-size: 0.8rem;
+          font-weight: 500;
+          line-height: 1rem;
+          color: var(--orange-dark);
+          margin-right: 5px;
+        }
+        &__to {
+          font-size: 0.8rem;
+          font-weight: 500;
+          line-height: 1rem;
+          color: var(--grey-light);
+        }
+        &__values {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &__points {
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.7rem;
+          color: var(--grey);
+          & svg {
+            width: 13px;
+            height: 16px;
+          }
+        }
+        &__dolars {
+          align-self: flex-end;
+          font-size: 0.8rem;
+          font-weight: 500;
+          line-height: 1rem;
+          color: var(--grey-light);
+        }
+      }
+    }
+  }
+}
