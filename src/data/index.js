@@ -4,6 +4,8 @@ import video from '../assets/videos/sunset.mp4';
 import gamemap from '../assets/images/gamemap.png';
 import gamemap2 from '../assets/images/gamemap2.png';
 import gameItemSmallImage from '../assets/images/item-small.png';
+import itemMedImage from '../assets/images/item-medium.png';
+
 export const games = [
   {
     title: 'Yeti Bomber',
@@ -64,13 +66,22 @@ export const items = [
   { id: 7, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: null },
 ]
 
+export const collectedItems = [
+  { id: 0, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: itemMedImage},
+  { id: 1, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: itemMedImage},
+  { id: 2, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: itemMedImage },
+  { id: 3, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: itemMedImage },
+]
 
 export const sortData = [
   { value: 90, title: 'Last 90 days' },
   { value: 60, title: 'Last 60 days' },
   { value: 30, title: 'Last 30 days' },
 ]
-
+export const sortPrice =  [
+  { value: 1, title: 'Price Low to High' },
+  { value: 2, title: 'Price High to Low' },
+]
 export const activityTableData = [
   {
     image: gameItemSmallImage,

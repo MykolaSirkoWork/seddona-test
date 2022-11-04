@@ -4,6 +4,10 @@
 @import './_lb-menu';
 @import './left-bar';
 
+.about {
+  @include pageHeight();
+}
+
 .info {
   &__main {
     display: grid;

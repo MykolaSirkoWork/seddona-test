@@ -4,10 +4,11 @@ const ItemCard = ({
   imageSrc,
   gameName,
   ratting,
-  itemName
+  itemName,
+  extraClasses
 }) => {
   return (
-    <div className="item-card">
+    <div className={`item-card ${extraClasses ?? ''}`}>
       <div className="item-card__img-container">
         {imageSrc && <img src={imageSrc} alt="item" />}
       </div>

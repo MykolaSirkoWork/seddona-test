@@ -26,6 +26,8 @@
 .f-ji-c { justify-content: center }
 // align-items
 .f-ai-c { align-items: center }
+.f-ai-fs { align-items: flex-start }
+.f-ai-fe { align-items: flex-end }
 
 // MARGIN
 @for $i from 1 through 50 {
