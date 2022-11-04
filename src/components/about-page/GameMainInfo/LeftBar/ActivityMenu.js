@@ -1,24 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { TabsContext } from '..';
 import arrowIcon from '../../../../assets/images/icons/arrow.svg';
 import Checkbox from '../../../common/Checkbox';
 
 const ActivityMenu = () => {
-  const [eventTypes, setEventTypes] = useState({
-    sales: { name: 'Sales', checked: false  },
-    listing: { name: 'Listing', checked: false },
-    offers: { name: 'Offers', checked: false },
-    collectionOffers: { name: 'Collection Offers', checked: false },
-    transfers: { name: 'Transfers', checked: false }
-  })
-  const checkboxHanlder = (e) => {
-    setEventTypes((prev) => ({
-      ...prev,
-      [e.target.name]: {
-        ...prev[e.target.name],
-        checked: !prev[e.target.name].checked
-      }
-    }))
-  } 
+  const { activity } = useContext(TabsContext);
+  const { eventTypes, checkboxHandler } = activity;
   const [accItems, setAccItems] = useState({
     attr1: true,
   })
@@ -41,7 +28,7 @@ const ActivityMenu = () => {
                 <li className='event-types__item' key={item + idx}>
                   <span>{eventTypes[item].name}</span>
                   <Checkbox
-                    onChange={checkboxHanlder}
+                    onChange={checkboxHandler}
                     checked={eventTypes[item].checked}
                     name={item}
                   />

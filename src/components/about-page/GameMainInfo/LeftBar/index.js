@@ -10,6 +10,7 @@ import { ReactComponent as FilterIcon } from '../../../../assets/images/icons/fi
 import ActivityMenu from "./ActivityMenu";
 
 const LeftBar = ({ currTab }) => {
+
   return (
     <div className={`left-bar ${currTab}`}>
       <GamePreview gameName="Yeti Bomber" createdBy="SuperYeti" extraClasses="mb-38" />
@@ -25,7 +26,6 @@ const LeftBar = ({ currTab }) => {
       )}
       {currTab === 'about' && (
         <>
-          
           <h3 className="game__slogan">Let’s all blow up the yetiverse.</h3>
           <p className="game__short-desc">Yeti Bomber is an exciting MMO web3 game where players can compete, earn, and own land quarries that provide the resources to level up their game play.</p>
           <DownloadBtn />

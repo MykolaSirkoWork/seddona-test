@@ -2,6 +2,7 @@ import TabContainer from "../../../common/TabContainer";
 import AboutTab from "./AboutTab";
 import ActivityTab from "./ActivityTab";
 import ItemsTab from "./ItemsTab";
+
 const tabs = [
   { key: 'about', title: 'About', component: <AboutTab /> },
   { key: 'items', title: 'Items', component: <ItemsTab /> },

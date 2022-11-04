@@ -15,5 +15,5 @@
 
 
 @mixin pageHeight {
-  min-height: calc(100vh - 274px);// 274 - footer height - 162, header height - 112;
+  min-height: calc(100vh - 274px);// 274 = footer height - 162, header height - 112;
 }

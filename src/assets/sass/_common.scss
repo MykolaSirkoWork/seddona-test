@@ -493,3 +493,34 @@
   }
   
 }
+
+// ICON BUTTON
+
+.btn-icon {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+// TRIPPLE BAR ICON 
+.triple-bar-icon {
+  display: flex;
+  height: 8px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  & div {
+    position: relative;
+    width: 8px;
+    height: 1.5px;
+    background-color: var(--orange-dark);
+    &:nth-child(2) {
+      width: 6px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import ItemCard from "./ItemCard";
 import { items } from "../../../../data";
 import Dropdown from "../../../common/Dropdown";
 import Button from "../../../common/Button";
-
+import { sortData } from "../../../../data";
 
 const selectData = [
   { title: 'Key 1', value: 'key1' },
@@ -13,11 +13,7 @@ const selectData = [
   { title: 'Key 3', value: 'key3' },
 ]
 
-const sortData = [
-  { value: 90, title: 'Last 90 days' },
-  { value: 60, title: 'Last 60 days' },
-  { value: 30, title: 'Last 30 days' },
-]
+
 const ItemsTab = () => {
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState('');

@@ -128,3 +128,144 @@
   padding: 13px 16px;
   text-transform: none;   
 }
+
+.activity-tab {
+  padding: 20px 0;
+  &__stats-graph {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+  &__stats-info {
+    & .title {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+      color: var(--grey);
+    }
+    & .value {
+      display: flex;
+      align-items: center;
+      & span {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.4rem;
+        color: var(--orange-dark);
+      }
+    }
+  }
+  .shown-events {
+    display: flex;
+    width: 100%;
+    &__item {
+      padding: 10px;
+      align-items: center;
+      display: flex;
+      background-color: #f3f3f3;
+      max-width: max-content;
+      border-radius: 3px;
+      margin-right: 10px;
+      cursor: pointer;
+      & span {
+        display: block;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.2rem;
+        color: #252525;
+        margin-right: 20px;
+      }
+      & svg {
+        width: 6px;
+        height: 6px;
+        stroke: var(--grey);
+        cursor: pointer;
+      }
+    }
+    .clear-btn {
+      border: none;
+      text-transform: capitalize;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.2rem;
+      color: #252525;
+    }
+  }
+}
+
+@mixin table-body-font {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.activity-table {
+  width: 100%;
+  &__head {
+    & tr {
+      & .h-cell {
+        padding: 12px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        color: var(--grey);
+        text-transform: capitalize;
+        border-bottom: 1px solid var(--grey-border-light);
+        text-align: center;
+        &:first-child { padding-left: 40px; }
+        &:nth-child(1) { text-align: start; } // item cell
+        &:nth-child(2) { text-align: start; } // price cell
+      }
+    }
+  }
+  &__body {
+    & .row {
+      & .b-cell {
+        width: 12.5%;
+        padding: 12px;
+        @include table-body-font();
+        text-align: center;
+        &:first-child {
+          padding-left: 40px;
+        }
+        & > .cell-price {
+          display: flex;
+          align-items: center;
+          @include table-body-font();
+          & > svg {
+            width: 8px;
+            height: 10px;
+          }
+        }
+        & > .cell-item {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          text-align: start;
+          & > * {
+            @include table-body-font();
+          }
+          & .img-container {
+            width: 35px;
+            height: 35px;
+            margin-right: 6px;
+          }
+        }
+        & > .cell-time {
+          display: flex;
+          align-items: center;
+          @include table-body-font();
+          & a {
+            display: flex;
+            align-items: center;
+            margin-left: 6px;
+          }
+        }
+        &.cell-quantity {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

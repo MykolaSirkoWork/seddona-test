@@ -3,7 +3,7 @@ import gameImg from '../assets/images/game-img.png';
 import video from '../assets/videos/sunset.mp4';
 import gamemap from '../assets/images/gamemap.png';
 import gamemap2 from '../assets/images/gamemap2.png';
-
+import gameItemSmallImage from '../assets/images/item-small.png';
 export const games = [
   {
     title: 'Yeti Bomber',
@@ -62,4 +62,68 @@ export const items = [
   { id: 5, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: null },
   { id: 6, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: null },
   { id: 7, gameName: 'Game Name', itemName: 'Item Name', ratting: 0.4, imageSrc: null },
+]
+
+
+export const sortData = [
+  { value: 90, title: 'Last 90 days' },
+  { value: 60, title: 'Last 60 days' },
+  { value: 30, title: 'Last 30 days' },
+]
+
+export const activityTableData = [
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  },
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  },
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  },
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  },
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  },
+  {
+    image: gameItemSmallImage,
+    name: 'Super Yeti LandQuarry',
+    price: 0.049,
+    quantity: 1,
+    from: 'Super Yeti',
+    to: 'Skovgaard',
+    time: '18 days ago'
+  }
 ]
